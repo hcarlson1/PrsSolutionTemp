@@ -56,11 +56,6 @@ namespace LeagueAppReal.Controllers
         {
             return View();
         }
-
-        [Authorize]
-        public IActionResult Team()
-        {
-            return View();
-        }
+        
     }
 }

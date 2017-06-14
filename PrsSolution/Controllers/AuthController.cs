@@ -19,7 +19,7 @@ namespace LeagueAppReal.Controllers
 
         public IActionResult Login() {
             if (User.Identity.IsAuthenticated) {
-                return RedirectToAction("Profile", "Home");
+                return RedirectToAction("Index", "Home");
             }
             return View();
         }
@@ -32,7 +32,7 @@ namespace LeagueAppReal.Controllers
                 if (signInResult.Succeeded)
                 {
                     if (string.IsNullOrWhiteSpace(returnUrl)) {
-                        return RedirectToAction("Profile", "Home");
+                        return RedirectToAction("Index", "Home");
                     }
                     return RedirectToAction(returnUrl);
                 }
@@ -49,7 +49,7 @@ namespace LeagueAppReal.Controllers
                 await _signInManager.SignOutAsync();
             
             }
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Login", "Auth");
         }
     }
 }

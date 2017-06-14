@@ -10,6 +10,6 @@ namespace LeagueAppReal.Models
         public string FName { get; set; }
         public string LName { get; set; }
         public string personId { get; set; }
-        public string summonerName { get; set; }
+        public string Role { get; set; }
     }
 }

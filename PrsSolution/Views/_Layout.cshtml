@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="sidebar">
-        <div class="Title"><h1>Team Meet</h1></div>
+        <div class="Title"><h1>PRS SOLUTION</h1></div>
         @if (User.Identity.IsAuthenticated)
         {
             <div class="Title">
@@ -26,11 +26,11 @@
         }
        
         <ul class="nav">
-            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-            <li><a asp-controller="Home" asp-action="LeagueofLegends">League of Legends</a></li>
+            
             @if (User.Identity.IsAuthenticated)
             {
-                <li><a asp-controller="Home" asp-action="Team">Team</a></li>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="LeagueofLegends">Sample Form Handling</a></li>
                 <li><a asp-controller="Home" asp-action="Profile">Profile</a></li>
             }
         </ul>
@@ -43,7 +43,7 @@
                     <li>
                         <button id="sidebarToggle" class="btn btn-primary"><i class="fa fa-angle-left fa-lg"></i></button>
                     </li>
-                    <li><a asp-controller="Home" asp-action="Index" class="navbar-brand">TestBrand</a></li>
+                    <li><a asp-controller="Home" asp-action="Index" class="navbar-brand">Brand/Logo here</a></li>
                 </ul>
                 @if (User.Identity.IsAuthenticated)
             {
@@ -74,7 +74,7 @@
         </main>
         <div id="footer">
 
-            <span class="moveRight">&copy; @DateTime.Now.Year - LeagueAppReal</span>
+            <span class="moveRight">&copy; @DateTime.Now.Year - PRS Solution</span>
 
         </div>
     </div>
