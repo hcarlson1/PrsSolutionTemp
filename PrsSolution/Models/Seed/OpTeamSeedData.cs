@@ -12,14 +12,17 @@ namespace LeagueAppReal.Models.Seed
         private OpTeamContext _context;
         private UserManager<User> _userManager;
 
-        public OpTeamSeedData(OpTeamContext context, UserManager<User> userManager) {
+        public OpTeamSeedData(OpTeamContext context, UserManager<User> userManager)
+        {
             _context = context;
             _userManager = userManager;
         }
 
+
         public async Task EnsureSeedData() {
             if (await _userManager.FindByEmailAsync("briedrice@gmail.com") == null) {
-                var user = new User()
+
+                    var user = new User()
                 {
                     UserName = "briedrice",
                     Email = "briedrice@gmail.com",

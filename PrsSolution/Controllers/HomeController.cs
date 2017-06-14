@@ -24,7 +24,7 @@ namespace LeagueAppReal.Controllers
         public HomeController(ISummonInfo summonerInfo, IConfigurationRoot config, OpTeamContext context) {
             _summonerInfo = summonerInfo;
             _config = config;
-            _context = context;
+            _context = context; //DATABASE INFORMATION
         }
 
         public IActionResult Index()
