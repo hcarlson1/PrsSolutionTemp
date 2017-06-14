@@ -34,7 +34,7 @@ namespace LeagueAppReal.Models.Seed
                     FName = "John",
                     LName = "Smith",
                     personId = "e32d",
-                    Role = "MNG"
+                    summonerName = "MNG"
                 };
                 _context.Person.Add(person);
 
